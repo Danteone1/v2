@@ -1,0 +1,14 @@
+# requirements.txt — SITER-CAE v5.0 / SITER-CDMX v5.1
+# Python 3.10+ recomendado
+
+# --- Obligatorio (la app no funciona sin estos) ---
+streamlit>=1.30        # UI. st.rerun() y st.progress(text=) requieren >=1.27
+pandas>=2.0            # DataFrames, roll-up territorial, exports
+numpy>=1.24            # RNG reproducible (default_rng), vectores de estado
+
+# --- Visualización ---
+plotly>=5.18           # Trayectorias, espacio NetLogo-style, MC con bandas p5–p95
+pydeck>=0.8            # Mapas reales/calor/rutas/ondas (Tab Visual Maps)
+
+# --- Opcional (el código degrada a JSON sin esto) ---
+PyYAML>=6.0            # Panel de config externa YAML/JSON
